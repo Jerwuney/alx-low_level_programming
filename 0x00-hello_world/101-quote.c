@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * main- Prints a line to the standard error e
- * Return: 1 (execute completed)
+ * main - Prints a line to the standard error e
+ * Return 1 (execute completed)
  */
 int main(void)
 {
