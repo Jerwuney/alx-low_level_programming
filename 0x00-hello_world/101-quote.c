@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <unistd.h>
+/**
+ * main- Prints a line to the standard error e
+ * Return: 1 (execute completed)
+ */
+int main(void)
+{
+	fprintf("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stdout);
+	return (1);
+}
