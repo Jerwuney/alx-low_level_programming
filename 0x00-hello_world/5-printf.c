@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - This program prints a piece of art in grammer formm
+ * main - This program prints a piece of art in grammar form
  * Return: 0 (completed executing)
  */
 int main(void)
