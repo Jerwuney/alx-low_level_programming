@@ -2,7 +2,7 @@
 
 /**
  * main - prints all the possible combination of
- *two digits without repetition, 'xy' == 'yx'
+ *two digits without repetition
  *
  * Return: 0 (executed)
  */
@@ -26,7 +26,7 @@ int main(void)
 				putchar(' ');
 			}
 		}
-	
+
 	putchar('\n');
 
 	return (0);
