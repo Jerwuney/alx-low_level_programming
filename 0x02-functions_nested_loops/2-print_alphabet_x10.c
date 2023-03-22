@@ -2,7 +2,7 @@
 
 /**
 * main - prints lowercase alphabets x10
-* Description: print multiple
+* description: print multiple
 * Return: 0 (excuted)
 */
 
@@ -18,5 +18,4 @@ void print_alphabet_x10(void)
 	}
 	_putchar('\n');
 
-	return (0);
 }
