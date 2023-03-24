@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_numbers - check for uppercase
+ * print_numbers - prints 0 to 9
  *
  * Return: Always 0 (executed)
  */
