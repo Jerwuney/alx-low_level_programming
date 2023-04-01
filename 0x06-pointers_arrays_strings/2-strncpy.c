@@ -5,7 +5,7 @@
  * @dest: destination init
  * @src: source init
  * @n: num of char
- * Return: a pointer to the strins
+ * Return: a pointer to the strings
  */
 
 char *_strncpy(char *dest, char *src, int n)
@@ -19,7 +19,7 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 	while (i < n)
 	{
-		dest[i] = '\0'
+		dest[i] = '\0';
 		i++;
 	}
 	return (dest);
