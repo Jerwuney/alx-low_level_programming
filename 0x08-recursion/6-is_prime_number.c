@@ -1,6 +1,8 @@
 #include "main.h"
 #include "math.h"
 
+typedef int make_iso_compilers_happy;
+
 /**
  *is_divisible - check divisibility of num from i to sqrt(n)
  *@num: the first input
