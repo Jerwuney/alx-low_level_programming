@@ -1,41 +1,26 @@
 #include "main.h"
 
 /**
- * perfect_square - a helper function
+ * is_divisible - checks divisibility of num from i to sqrt(n)
  * @num: first number
  * @i: second number
  *
- * Return: the square
+ * Return: 1 if divisible, otherwise 0
  */
 
-int perfect_square(int num, int i)
+int is_divisible(int num, int i)
 {
-	if (i * i == num)
-	{
-		return (i);
-	}
 	if (i * i > num)
 	{
-		return (-1);
+		return (0);
 	}
-	return (perfect_square(num, i + 1));
-}
-
-/**
- * _sqrt_recursion - a function that calculates a square root
- * @n: the input number
- *
- * Return: the square root of n
- */
-
-int _sqrt_recursion(int n)
-{
-	if (n < 0)
+	if (num % i == 0)
 	{
-		return (-1);
+		return (1);
 	}
-	return (perfect_square(n, 1));
+	return (is_divisible(num, i + 2));
 }
+
 
 /**
  * is_prime_number - returns 1 for a prime number otherwise 0
@@ -58,5 +43,5 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	return (perfect_square(n, 3));
+	return (!is_divisible(n, 3));
 }
