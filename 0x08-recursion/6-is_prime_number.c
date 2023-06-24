@@ -1,25 +1,40 @@
 #include "main.h"
-#include "math.h"
-
-typedef int make_iso_compilers_happy;
 
 /**
- *is_divisible - check divisibility of num from i to sqrt(n)
- *@num: the first input
- *@i: secong input
- *Return: the check
+ * perfect_square - a helper function
+ * @num: first number
+ * @i: second number
+ *
+ * Return: the square
  */
-int is_divisible(int num, int i)
+
+int perfect_square(int num, int i)
 {
-	if (i > sqrt(num))
+	if (i * i == num)
 	{
-		return (0);
+		return (i);
 	}
-	if (num % i == 0)
+	if (i * i > num)
 	{
-		return (1);
+		return (-1);
 	}
-	return (is_divisible(num, i + 2));
+	return (perfect_square(num, i + 1));
+}
+
+/**
+ * _sqrt_recursion - a function that calculates a square root
+ * @n: the input number
+ *
+ * Return: the square root of n
+ */
+
+int _sqrt_recursion(int n)
+{
+	if (n < 0)
+	{
+		return (-1);
+	}
+	return (perfect_square(n, 1));
 }
 
 /**
@@ -43,5 +58,5 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	return (!is_divisible(n, 3));
+	return (perfect_square(n, 3));
 }
