@@ -10,7 +10,7 @@
  * Return: 0 on execution
  */
 
-int main(int __attribute__((__unused__)) argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int num1;
 	int num2;
