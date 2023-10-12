@@ -14,7 +14,7 @@ typedef struct op
 } op_t;
 
 int op_add(int a, int b);
-int op_subt(int a, int b);
+int op_sub(int a, int b);
 int op_mul(int a, int b);
 int op_mod(int a, int b);
 int op_div(int a, int b);

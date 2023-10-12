@@ -1,7 +1,7 @@
 #include "3-calc.h"
 
 int op_add(int a, int b);
-int op_subt(int a, int b);
+int op_sub(int a, int b);
 int op_mul(int a, int b);
 int op_mod(int a, int b);
 int op_div(int a, int b);
@@ -20,14 +20,14 @@ int op_add(int a, int b)
 }
 
 /**
- * op_subt - calculates the difference of two numbers
+ * op_sub - calculates the difference of two numbers
  * @a: 1st input
  * @b: 2nd input
  *
  * Return: the difference
  */
 
-int op_subt(int a, int b)
+int op_sub(int a, int b)
 {
 	return (a - b);
 }
