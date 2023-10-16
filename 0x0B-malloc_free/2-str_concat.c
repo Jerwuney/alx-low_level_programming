@@ -1,5 +1,24 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
+
+/**
+ * _strlen - calculates the length of a string
+ * @s: pointer to the string
+ *
+ * Return: the length of the string
+ */
+
+int _strlen(char *s)
+{
+	int n = 0;
+
+	while (s[n] != '\0')
+	{
+		n++;
+	}
+	return (n);
+}
 
 /**
  * *str_concat - concatenates two strings
@@ -23,15 +42,8 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	while (s1[a] != '\0')
-	{
-		a++;
-	}
-	while (s2[b] != '\0')
-	{
-		b++;
-	}
-	s = malloc(sizeof(char) * (a + b + 1));
+
+	s = malloc(sizeof(char) * (_strlen(s1) + _strlen(s2) + 1));
 
 	if (s == NULL)
 	{
